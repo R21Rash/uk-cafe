@@ -32,6 +32,11 @@ function FloatingBean({ className = '' }: { className?: string }) {
   return <span aria-hidden="true" className={`cafe-bean absolute h-5 w-3 rotate-45 rounded-full bg-[#2f2105] opacity-80 shadow-sm ${className}`} />;
 }
 
+function publicAsset(src: string) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  return src.startsWith('/') ? `${basePath}${src}` : src;
+}
+
 function getMealImage(cafe: Cafe, item: string, fallback: string) {
   return cafe.mealIllustrations?.find((meal) => item.toLowerCase().includes(meal.match.toLowerCase()))?.src ?? fallback;
 }
@@ -43,7 +48,7 @@ function MenuCard({ cafe, item, index }: { cafe: Cafe; item: Cafe['menu'][number
     <article className="cafe-card group rounded-[24px] bg-white p-3 shadow-[0_12px_34px_rgba(47,33,5,0.14)]">
       <div className="cafe-shine relative h-44 overflow-hidden rounded-[18px] bg-[#f6ebda] sm:h-48">
         <Image
-          src={images[index % images.length]}
+          src={publicAsset(images[index % images.length])}
           alt={`${item.name} visual cue`}
           fill
           sizes="(min-width: 1024px) 28vw, (min-width: 640px) 45vw, 100vw"
@@ -120,7 +125,7 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
             <div className="absolute inset-5 rounded-full bg-[#2f2105] sm:inset-6" />
             <div className="absolute inset-0 rounded-full shadow-[inset_0_0_0_10px_rgba(255,255,255,0.32)]" style={{ background: cafe.theme.accentSoft }} />
             <div className="absolute inset-7 overflow-hidden rounded-full bg-white shadow-2xl sm:inset-10">
-              <Image src={cafe.assets.food} alt={`Illustrative food photography for ${cafe.name}`} fill priority sizes="(min-width: 1024px) 42vw, 90vw" className="object-cover" />
+              <Image src={publicAsset(cafe.assets.food)} alt={`Illustrative food photography for ${cafe.name}`} fill priority sizes="(min-width: 1024px) 42vw, 90vw" className="object-cover" />
             </div>
             <span className="cafe-steam absolute left-[42%] top-[12%] h-16 w-8" />
             <span className="cafe-steam absolute left-[52%] top-[8%] h-20 w-10 [animation-delay:500ms]" />
@@ -194,7 +199,7 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
               className={`cafe-card group relative min-h-44 overflow-hidden rounded-[22px] bg-[#fff7ea] p-4 shadow-sm ${index % 5 === 0 ? 'sm:col-span-2' : ''} sm:min-h-48`}
             >
               <Image
-                src={foodPhotos[index % foodPhotos.length]}
+                src={publicAsset(foodPhotos[index % foodPhotos.length])}
                 alt={`${food} visual cue`}
                 fill
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
@@ -216,12 +221,12 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
         <SectionTitle kicker="Gallery" title="Food-led visual rhythm" accent={accent} />
         <div className="mt-8 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="cafe-card cafe-shine relative min-h-[320px] overflow-hidden rounded-[28px] shadow-[0_18px_44px_rgba(47,33,5,0.16)] sm:min-h-[420px]">
-            <Image src={cafe.assets.gallery[0]} alt={`${cafe.name} food photography`} fill sizes="(min-width: 1024px) 58vw, 100vw" className="object-cover" />
+            <Image src={publicAsset(cafe.assets.gallery[0])} alt={`${cafe.name} food photography`} fill sizes="(min-width: 1024px) 58vw, 100vw" className="object-cover" />
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
             {cafe.assets.gallery.slice(1, 4).map((image, index) => (
               <div key={image} className="cafe-card cafe-shine relative min-h-44 overflow-hidden rounded-[24px] shadow-sm sm:min-h-48">
-                <Image src={image} alt={`${cafe.name} gallery image ${index + 2}`} fill sizes="(min-width: 1024px) 32vw, 50vw" className="object-cover" />
+                <Image src={publicAsset(image)} alt={`${cafe.name} gallery image ${index + 2}`} fill sizes="(min-width: 1024px) 32vw, 50vw" className="object-cover" />
               </div>
             ))}
           </div>
@@ -234,7 +239,7 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
           <div className="cafe-card relative mx-auto h-[330px] w-full max-w-sm rounded-[18px] bg-white p-2 shadow-2xl sm:h-[430px]">
             <div className="relative h-full overflow-hidden rounded-[14px]">
-              <Image src={cafe.assets.interior} alt={`${cafe.name} concept interior detail`} fill sizes="(min-width: 1024px) 32vw, 90vw" className="object-cover" />
+              <Image src={publicAsset(cafe.assets.interior)} alt={`${cafe.name} concept interior detail`} fill sizes="(min-width: 1024px) 32vw, 90vw" className="object-cover" />
             </div>
           </div>
           <div>
@@ -293,7 +298,7 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
                     <li key={item} className="grid grid-cols-[88px_1fr] gap-3 rounded-[18px] bg-[#fff7ea] p-2">
                       <div className="cafe-shine relative h-24 overflow-hidden rounded-[14px] bg-white">
                         <Image
-                          src={getMealImage(cafe, item, foodPhotos[(itemIndex + section.title.length) % foodPhotos.length])}
+                          src={publicAsset(getMealImage(cafe, item, foodPhotos[(itemIndex + section.title.length) % foodPhotos.length]))}
                           alt={`${item} meal visual`}
                           fill
                           sizes="88px"
@@ -357,7 +362,7 @@ function CafeSite({ cafe }: { cafe: Cafe }) {
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-8 sm:py-16">
         <div className="cafe-pulse-cta cafe-shine relative overflow-hidden rounded-[28px] bg-[#2f2105] px-4 py-12 text-center text-white sm:px-10 sm:py-16">
-          <Image src={cafe.assets.food} alt="" fill sizes="100vw" className="object-cover opacity-35" />
+          <Image src={publicAsset(cafe.assets.food)} alt="" fill sizes="100vw" className="object-cover opacity-35" />
           <div className="relative z-10 mx-auto max-w-3xl">
             <h2 className="text-3xl font-black leading-tight sm:text-4xl">A cafe page should make people hungry, then make the visit easy.</h2>
             <div className="mt-7 grid gap-3 text-left md:grid-cols-2">
