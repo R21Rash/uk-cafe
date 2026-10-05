@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Smoked salmon and scrambled eggs illustration">
+  <rect width="320" height="240" rx="28" fill="#f7f1e7"/>
+  <ellipse cx="160" cy="126" rx="116" ry="76" fill="#fffaf2" stroke="#2f2105" stroke-width="8"/>
+  <rect x="78" y="108" width="86" height="48" rx="14" fill="#c89244"/>
+  <path d="M172 105c37-26 65-7 64 20-1 25-40 19-65 44" fill="#e8745a"/>
+  <path d="M179 121c23-13 42-8 48 3" fill="none" stroke="#fff7ea" stroke-width="6" stroke-linecap="round"/>
+  <path d="M93 88c16-13 49-13 67 0" fill="none" stroke="#ffcf57" stroke-width="15" stroke-linecap="round"/>
+  <path d="M91 71c17-12 50-12 72 1" fill="none" stroke="#ffcf57" stroke-width="15" stroke-linecap="round"/>
+</svg>

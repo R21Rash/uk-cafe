@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Eggs Benedict illustration">
+  <rect width="320" height="240" rx="28" fill="#fff7ea"/>
+  <ellipse cx="160" cy="130" rx="114" ry="70" fill="#f7f1e7" stroke="#2f2105" stroke-width="8"/>
+  <ellipse cx="118" cy="134" rx="44" ry="24" fill="#d7a646"/>
+  <ellipse cx="204" cy="134" rx="44" ry="24" fill="#d7a646"/>
+  <circle cx="118" cy="115" r="29" fill="#fff"/>
+  <circle cx="204" cy="115" r="29" fill="#fff"/>
+  <path d="M94 116c18 20 43 20 62 0" fill="none" stroke="#ffcf57" stroke-width="13" stroke-linecap="round"/>
+  <path d="M180 116c18 20 43 20 62 0" fill="none" stroke="#ffcf57" stroke-width="13" stroke-linecap="round"/>
+  <path d="M91 161h140" stroke="#4b8b45" stroke-width="10" stroke-linecap="round"/>
+</svg>

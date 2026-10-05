@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Soft brunch table concept">
+  <rect width="1200" height="800" fill="#fffdfb"/>
+  <rect x="0" y="0" width="1200" height="210" fill="#f6d7df"/>
+  <circle cx="255" cy="455" r="135" fill="#ffd9c8"/>
+  <circle cx="255" cy="455" r="72" fill="#fffdfb" stroke="#27151a" stroke-width="12"/>
+  <rect x="500" y="330" width="460" height="82" rx="41" fill="#b95f74"/>
+  <rect x="560" y="500" width="340" height="82" rx="41" fill="#27151a"/>
+  <path d="M150 700h900" stroke="#b95f74" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" role="img" aria-label="Classic British cafe counter concept">
+  <rect width="1400" height="1000" fill="#f3e4cf"/>
+  <rect y="690" width="1400" height="310" fill="#6f1d16"/>
+  <rect x="90" y="120" width="1220" height="560" fill="#fff7ea" stroke="#241812" stroke-width="18"/>
+  <rect x="170" y="205" width="1060" height="110" fill="#b42318"/>
+  <text x="700" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#fff7ea">BREAKFAST &amp; TEA</text>
+  <circle cx="350" cy="520" r="118" fill="#f7d8ce"/>
+  <circle cx="350" cy="520" r="76" fill="#fffaf2" stroke="#211914" stroke-width="12"/>
+  <rect x="530" y="430" width="520" height="70" rx="8" fill="#211914"/>
+  <rect x="530" y="540" width="410" height="70" rx="8" fill="#211914"/>
+  <rect x="150" y="760" width="1100" height="46" fill="#fffaf2"/>
+  <rect x="210" y="840" width="980" height="34" fill="#d9b072"/>
+</svg>
