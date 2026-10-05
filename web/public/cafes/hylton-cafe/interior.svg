@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Classic cafe table concept">
+  <rect width="1200" height="800" fill="#fffaf2"/>
+  <path d="M0 570h1200v230H0z" fill="#b42318"/>
+  <path d="M120 110h960v360H120z" fill="#f7f1e7" stroke="#211914" stroke-width="14"/>
+  <path d="M255 305h690" stroke="#211914" stroke-width="22" stroke-linecap="round"/>
+  <path d="M300 420h600" stroke="#b42318" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="350" cy="635" r="92" fill="#fffaf2"/>
+  <circle cx="350" cy="635" r="48" fill="#d9b072"/>
+  <rect x="560" y="585" width="300" height="100" rx="14" fill="#211914"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Eggs on toast illustration">
+  <rect width="320" height="240" rx="28" fill="#fff7ea"/>
+  <rect x="72" y="76" width="176" height="104" rx="24" fill="#d7a646" stroke="#8b4a2b" stroke-width="8"/>
+  <circle cx="123" cy="122" r="34" fill="#fff"/>
+  <circle cx="123" cy="122" r="13" fill="#ff902b"/>
+  <circle cx="191" cy="122" r="34" fill="#fff"/>
+  <circle cx="191" cy="122" r="13" fill="#ff902b"/>
+  <path d="M91 181h137" stroke="#2f2105" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+</svg>

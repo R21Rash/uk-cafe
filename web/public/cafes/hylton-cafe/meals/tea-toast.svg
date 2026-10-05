@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Tea and toast illustration">
+  <rect width="320" height="240" rx="28" fill="#f7f1e7"/>
+  <rect x="58" y="94" width="92" height="70" rx="18" fill="#d7a646" stroke="#8b4a2b" stroke-width="7"/>
+  <rect x="84" y="70" width="92" height="70" rx="18" fill="#e4ba65" stroke="#8b4a2b" stroke-width="7"/>
+  <path d="M188 102h58v45c0 22-13 36-29 36s-29-14-29-36z" fill="#fffaf2" stroke="#2f2105" stroke-width="7"/>
+  <path d="M245 116c29 0 29 37 0 37" fill="none" stroke="#2f2105" stroke-width="7" stroke-linecap="round"/>
+  <path d="M199 116h36" stroke="#b42318" stroke-width="7" stroke-linecap="round"/>
+</svg>

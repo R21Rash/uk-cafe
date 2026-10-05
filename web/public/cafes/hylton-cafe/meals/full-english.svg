@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Full English breakfast illustration">
+  <rect width="320" height="240" rx="28" fill="#fff7ea"/>
+  <ellipse cx="160" cy="128" rx="116" ry="78" fill="#f7f1e7" stroke="#2f2105" stroke-width="8"/>
+  <circle cx="118" cy="115" r="28" fill="#fff"/>
+  <circle cx="118" cy="115" r="12" fill="#ff902b"/>
+  <circle cx="174" cy="139" r="26" fill="#fff"/>
+  <circle cx="174" cy="139" r="11" fill="#ff902b"/>
+  <rect x="212" y="75" width="22" height="82" rx="11" fill="#b42318"/>
+  <rect x="240" y="83" width="22" height="78" rx="11" fill="#b42318"/>
+  <circle cx="172" cy="88" r="7" fill="#b76b2d"/>
+  <circle cx="190" cy="92" r="7" fill="#b76b2d"/>
+  <circle cx="184" cy="111" r="7" fill="#b76b2d"/>
+  <path d="M67 78h44l-10 38H72z" fill="#d8a13a"/>
+  <path d="M68 148c16-18 37-18 55 0" fill="none" stroke="#8b4a2b" stroke-width="14" stroke-linecap="round"/>
+</svg>

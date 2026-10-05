@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page-bg: #f8fafc;
+  --text: #102033;
+  --muted: #526173;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-200 focus-visible:ring-offset-2;
+}
+
+.cafe-entrance {
+  animation: cafe-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.cafe-entrance-delay-1 {
+  animation-delay: 120ms;
+}
+
+.cafe-entrance-delay-2 {
+  animation-delay: 220ms;
+}
+
+.cafe-entrance-delay-3 {
+  animation-delay: 320ms;
+}
+
+.cafe-float {
+  animation: cafe-float 4.8s ease-in-out infinite;
+}
+
+.cafe-float-slow {
+  animation: cafe-float 6.5s ease-in-out infinite;
+}
+
+.cafe-bean {
+  animation: cafe-bean-drift 8s ease-in-out infinite;
+}
+
+.cafe-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%) skewX(-18deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+  transition: transform 700ms ease;
+}
+
+.cafe-shine:hover::after {
+  transform: translateX(120%) skewX(-18deg);
+}
+
+.cafe-card {
+  transform: translateZ(0);
+  transition:
+    transform 280ms ease,
+    box-shadow 280ms ease,
+    border-color 280ms ease;
+}
+
+.cafe-card:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.cafe-orbit {
+  animation: cafe-orbit 18s linear infinite;
+}
+
+.cafe-pulse-cta {
+  animation: cafe-pulse-cta 2.8s ease-in-out infinite;
+}
+
+.cafe-marquee {
+  animation: cafe-marquee 26s linear infinite;
+}
+
+.cafe-steam {
+  animation: cafe-steam 3.8s ease-in-out infinite;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 999px;
+  filter: blur(0.2px);
+}
+
+.cafe-star-pop {
+  animation: cafe-star-pop 1.8s ease-in-out infinite;
+}
+
+@keyframes cafe-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cafe-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(2deg);
+  }
+}
+
+@keyframes cafe-bean-drift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(42deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(62deg);
+  }
+}
+
+@keyframes cafe-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cafe-pulse-cta {
+  0%,
+  100% {
+    box-shadow: 0 16px 42px rgba(47, 33, 5, 0.16);
+  }
+  50% {
+    box-shadow: 0 22px 70px rgba(255, 144, 43, 0.28);
+  }
+}
+
+@keyframes cafe-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes cafe-steam {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.8) rotate(-8deg);
+  }
+  35% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-42px) scale(1.12) rotate(10deg);
+  }
+}
+
+@keyframes cafe-star-pop {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(12deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

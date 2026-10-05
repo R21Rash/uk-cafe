@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Modern cafe seating concept">
+  <rect width="1200" height="800" fill="#fbfffd"/>
+  <rect x="80" y="100" width="1040" height="520" fill="#eef6f2" stroke="#10211d" stroke-width="16"/>
+  <rect x="180" y="500" width="840" height="62" fill="#0f7b67"/>
+  <circle cx="330" cy="350" r="84" fill="#10211d"/>
+  <circle cx="600" cy="350" r="84" fill="#c7eadf"/>
+  <circle cx="870" cy="350" r="84" fill="#10211d"/>
+  <path d="M200 690h800" stroke="#10211d" stroke-width="20" stroke-linecap="round"/>
+</svg>

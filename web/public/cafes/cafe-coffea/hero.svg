@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" role="img" aria-label="Boutique brunch cafe concept">
+  <rect width="1400" height="1000" fill="#fff7f4"/>
+  <circle cx="1030" cy="210" r="250" fill="#f6d7df"/>
+  <circle cx="300" cy="790" r="260" fill="#ffd9c8"/>
+  <rect x="160" y="180" width="1080" height="640" rx="320" fill="#fffdfb" stroke="#b95f74" stroke-width="16"/>
+  <path d="M350 520c110-180 250-180 360 0s250 180 360 0" fill="none" stroke="#b95f74" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="500" cy="410" r="82" fill="#27151a"/>
+  <circle cx="900" cy="410" r="82" fill="#27151a"/>
+  <text x="700" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="82" font-weight="800" fill="#27151a">BRUNCH</text>
+</svg>

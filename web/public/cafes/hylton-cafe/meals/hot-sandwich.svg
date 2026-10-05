@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Hot sandwich illustration">
+  <rect width="320" height="240" rx="28" fill="#fff7ea"/>
+  <path d="M67 145c32-64 154-64 186 0z" fill="#e2b35d" stroke="#8b4a2b" stroke-width="8"/>
+  <path d="M80 148h160v28H80z" fill="#fffaf2" stroke="#8b4a2b" stroke-width="7"/>
+  <path d="M100 134h120" stroke="#b42318" stroke-width="12" stroke-linecap="round"/>
+  <path d="M112 115h96" stroke="#4b8b45" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="125" cy="91" r="5" fill="#8b4a2b"/>
+  <circle cx="159" cy="84" r="5" fill="#8b4a2b"/>
+  <circle cx="194" cy="94" r="5" fill="#8b4a2b"/>
+</svg>

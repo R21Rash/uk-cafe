@@ -1,0 +1,22 @@
+node_modules/
+.next/
+dist/
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+coverage/
+.env
+.env.local
+*.log
+*.iml
+.DS_Store
+ios/Pods/
+android/.gradle/
+
+# Legacy folders from the previous workspace, not part of this static cafe site
+backend/
+mobile/
+database/
+backend.code-workspace
